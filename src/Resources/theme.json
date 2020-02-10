@@ -1,0 +1,58 @@
+{
+    "name": "TestTheme",
+    "author": "Shopware AG",
+    "views": [
+        "@Storefront",
+        "@Plugins",
+        "@TestTheme"
+    ],
+    "style": [
+        "app/storefront/src/scss/overrides.scss",
+        "@Storefront",
+        "app/storefront/src/scss/base.scss"
+    ],
+    "script": [
+        "@Storefront",
+        "app/storefront/dist/storefront/js/test-theme.js"
+    ],
+    "asset": [
+        "app/storefront/src/assets"
+    ],
+    "config": {
+        "fields": {
+            "sw-my-color": {
+                "label": {
+                    "en-GB": "My color",
+                    "de-DE": "Meine Farbe"
+                },
+                "type": "color",
+                "value": "#ffcc00",
+                "editable": true,
+                "block": "themeColors",
+                "order": 500
+            },
+            "sw-my-radius": {
+                "label": {
+                    "en-GB": "My radius",
+                    "de-DE": "Mein Radius"
+                },
+                "type": "text",
+                "value": "10px",
+                "editable": true,
+                "block": "themeColors",
+                "order": 600
+            },
+            "sw-new-color": {
+                "label": {
+                    "en-GB": "New color",
+                    "de-DE": "Neue Farbe"
+                },
+                "type": "color",
+                "value": "#f8f8f8",
+                "editable": true,
+                "block": "themeColors",
+                "order": 700
+            }
+        }
+    }
+}
